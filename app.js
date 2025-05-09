@@ -148,8 +148,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // set up express session
-const sessionDatabase = mongoose.createConnection('use your own url');
-const mongoURI = 'use your own url';
+const sessionDatabase = mongoose.createConnection('mongodb+srv://hfzdnedu:ECnw2m8HC97vIvDy@itary.uitcp.mongodb.net/Testsession');
+const mongoURI = 'mongodb+srv://hfzdnedu:ECnw2m8HC97vIvDy@itary.uitcp.mongodb.net/Testsession';
 const store = new MongoDBSession({
     uri: mongoURI,
     collection: 'sessions',
@@ -200,7 +200,7 @@ app.use(async (req, res, next) => {
 
 // MongoDB Connection
 const detailDB = mongoose.createConnection(
-    'use your own url'
+    'mongodb+srv://hfzdnedu:ECnw2m8HC97vIvDy@itary.uitcp.mongodb.net/TestdetailDB'
 );
 
 // Define schema for child, parent, teacher, and file

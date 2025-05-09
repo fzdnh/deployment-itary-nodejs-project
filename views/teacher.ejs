@@ -30,7 +30,7 @@
                     <!-- Class Selection -->
                     <div class="mb-3">
                         <label for="teacherClass" class="form-label">Class</label>
-                        <select class="form-control" id="teacherClass" name="teacherClass" required>
+                        <select class="form-control" id="teacherClass" name="teacherClass" >
                             <option value="">Select a class</option>
                             <% availableClasses.forEach(cls => { %>
                                 <option value="<%= cls._id %>"><%= cls.classname %></option>
